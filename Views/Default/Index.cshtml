@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    @Html.ActionLink("Click to logout","logout")
+}
+<h2>Index</h2>
+<h1>this is index page</h1>
+
